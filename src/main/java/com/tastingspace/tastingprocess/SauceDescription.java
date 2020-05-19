@@ -9,21 +9,13 @@ public class SauceDescription implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.Integer sauceId;
+	private String sauceId;
 
 	private java.lang.String sauceName;
 
-	private java.lang.Integer sauceSpiciness;
+	private String sauceSpiciness;
 
 	public SauceDescription() {
-	}
-
-	public java.lang.Integer getSauceId() {
-		return this.sauceId;
-	}
-
-	public void setSauceId(java.lang.Integer sauceId) {
-		this.sauceId = sauceId;
 	}
 
 	public java.lang.String getSauceName() {
@@ -34,16 +26,24 @@ public class SauceDescription implements java.io.Serializable {
 		this.sauceName = sauceName;
 	}
 
-	public java.lang.Integer getSauceSpiciness() {
+	public java.lang.String getSauceId() {
+		return this.sauceId;
+	}
+
+	public void setSauceId(java.lang.String sauceId) {
+		this.sauceId = sauceId;
+	}
+
+	public java.lang.String getSauceSpiciness() {
 		return this.sauceSpiciness;
 	}
 
-	public void setSauceSpiciness(java.lang.Integer sauceSpiciness) {
+	public void setSauceSpiciness(java.lang.String sauceSpiciness) {
 		this.sauceSpiciness = sauceSpiciness;
 	}
 
-	public SauceDescription(java.lang.Integer sauceId,
-			java.lang.String sauceName, java.lang.Integer sauceSpiciness) {
+	public SauceDescription(java.lang.String sauceId,
+			java.lang.String sauceName, java.lang.String sauceSpiciness) {
 		this.sauceId = sauceId;
 		this.sauceName = sauceName;
 		this.sauceSpiciness = sauceSpiciness;
