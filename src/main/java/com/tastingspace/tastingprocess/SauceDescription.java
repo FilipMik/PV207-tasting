@@ -9,42 +9,44 @@ public class SauceDescription implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.Integer recipeId;
-	private java.lang.String recipeName;
-	private java.lang.Integer recipeSpiciness;
+	private java.lang.Integer sauceId;
+
+	private java.lang.String sauceName;
+
+	private java.lang.Integer sauceSpiciness;
 
 	public SauceDescription() {
 	}
 
-	public java.lang.Integer getRecipeId() {
-		return this.recipeId;
+	public java.lang.Integer getSauceId() {
+		return this.sauceId;
 	}
 
-	public void setRecipeId(java.lang.Integer recipeId) {
-		this.recipeId = recipeId;
+	public void setSauceId(java.lang.Integer sauceId) {
+		this.sauceId = sauceId;
 	}
 
-	public java.lang.String getRecipeName() {
-		return this.recipeName;
+	public java.lang.String getSauceName() {
+		return this.sauceName;
 	}
 
-	public void setRecipeName(java.lang.String recipeName) {
-		this.recipeName = recipeName;
+	public void setSauceName(java.lang.String sauceName) {
+		this.sauceName = sauceName;
 	}
 
-	public java.lang.Integer getRecipeSpiciness() {
-		return this.recipeSpiciness;
+	public java.lang.Integer getSauceSpiciness() {
+		return this.sauceSpiciness;
 	}
 
-	public void setRecipeSpiciness(java.lang.Integer recipeSpiciness) {
-		this.recipeSpiciness = recipeSpiciness;
+	public void setSauceSpiciness(java.lang.Integer sauceSpiciness) {
+		this.sauceSpiciness = sauceSpiciness;
 	}
 
-	public SauceDescription(java.lang.Integer recipeId,
-			java.lang.String recipeName, java.lang.Integer recipeSpiciness) {
-		this.recipeId = recipeId;
-		this.recipeName = recipeName;
-		this.recipeSpiciness = recipeSpiciness;
+	public SauceDescription(java.lang.Integer sauceId,
+			java.lang.String sauceName, java.lang.Integer sauceSpiciness) {
+		this.sauceId = sauceId;
+		this.sauceName = sauceName;
+		this.sauceSpiciness = sauceSpiciness;
 	}
 
 }
