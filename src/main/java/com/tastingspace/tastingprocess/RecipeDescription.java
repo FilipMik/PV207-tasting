@@ -5,7 +5,7 @@ package com.tastingspace.tastingprocess;
  */
 
 @javax.xml.bind.annotation.XmlRootElement
-public class RecipeDescription implements java.io.Serializable {
+public class SauceDescription implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
@@ -13,7 +13,7 @@ public class RecipeDescription implements java.io.Serializable {
 	private java.lang.String recipeName;
 	private java.lang.Integer recipeSpiciness;
 
-	public RecipeDescription() {
+	public SauceDescription() {
 	}
 
 	public java.lang.Integer getRecipeId() {
@@ -40,7 +40,7 @@ public class RecipeDescription implements java.io.Serializable {
 		this.recipeSpiciness = recipeSpiciness;
 	}
 
-	public RecipeDescription(java.lang.Integer recipeId,
+	public SauceDescription(java.lang.Integer recipeId,
 			java.lang.String recipeName, java.lang.Integer recipeSpiciness) {
 		this.recipeId = recipeId;
 		this.recipeName = recipeName;
