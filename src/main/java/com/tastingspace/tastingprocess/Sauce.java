@@ -5,6 +5,7 @@ package com.tastingspace.tastingprocess;
  */
 
 @javax.xml.bind.annotation.XmlRootElement
+@org.kie.api.definition.type.TypeSafe(false)
 public class Sauce implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
