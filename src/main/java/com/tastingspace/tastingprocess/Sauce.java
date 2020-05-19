@@ -6,12 +6,44 @@ package com.tastingspace.tastingprocess;
 
 public class Sauce implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Sauce() {
-    }
+	private java.lang.String sauceId;
+	private java.lang.String sauceName;
+	private java.lang.String sauceSpiciness;
 
+	public Sauce() {
+	}
 
+	public java.lang.String getSauceId() {
+		return this.sauceId;
+	}
 
+	public void setSauceId(java.lang.String sauceId) {
+		this.sauceId = sauceId;
+	}
+
+	public java.lang.String getSauceName() {
+		return this.sauceName;
+	}
+
+	public void setSauceName(java.lang.String sauceName) {
+		this.sauceName = sauceName;
+	}
+
+	public java.lang.String getSauceSpiciness() {
+		return this.sauceSpiciness;
+	}
+
+	public void setSauceSpiciness(java.lang.String sauceSpiciness) {
+		this.sauceSpiciness = sauceSpiciness;
+	}
+
+	public Sauce(java.lang.String sauceId, java.lang.String sauceName,
+			java.lang.String sauceSpiciness) {
+		this.sauceId = sauceId;
+		this.sauceName = sauceName;
+		this.sauceSpiciness = sauceSpiciness;
+	}
 
 }
