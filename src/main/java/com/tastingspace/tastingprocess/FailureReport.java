@@ -6,12 +6,35 @@ package com.tastingspace.tastingprocess;
 
 public class FailureReport implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public FailureReport() {
-    }
+	private java.lang.String tastedSauceId;
+	private java.lang.String tastedSauceFailureDescription;
 
+	public FailureReport() {
+	}
 
+	public java.lang.String getTastedSauceId() {
+		return this.tastedSauceId;
+	}
 
+	public void setTastedSauceId(java.lang.String tastedSauceId) {
+		this.tastedSauceId = tastedSauceId;
+	}
+
+	public java.lang.String getTastedSauceFailureDescription() {
+		return this.tastedSauceFailureDescription;
+	}
+
+	public void setTastedSauceFailureDescription(
+			java.lang.String tastedSauceFailureDescription) {
+		this.tastedSauceFailureDescription = tastedSauceFailureDescription;
+	}
+
+	public FailureReport(java.lang.String tastedSauceId,
+			java.lang.String tastedSauceFailureDescription) {
+		this.tastedSauceId = tastedSauceId;
+		this.tastedSauceFailureDescription = tastedSauceFailureDescription;
+	}
 
 }
